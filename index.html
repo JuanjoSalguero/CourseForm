@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>JSalguero's form.</title>
+
+</head>
+
+<body>
+    
+    <header>
+        <h1 id="title">JSalguero Survey Form</h1>
+        <p id="description">Thank you for taking the time to help us improve the platform</p>
+    </header>
+
+    <main>
+        <form id="survey-form">
+            <!-- Nombre-->
+            <label for="name" id="name-label">Name</label><br>
+            <input id="name" type="text" placeholder="Insert your name" required><br>
+
+            <!-- Email-->
+            <label for="email" id="email-label">Email</label><br>
+            <input id="email" type="email" placeholder="Insert your email" required><br>
+
+            <!-- Edad-->
+            <label for="number" id="number-label">Age (optional)</label><br>
+            <input id="number" type="number" min="10" max="99" placeholder="Insert your age"><br>
+
+            <!-- Desplegable-->
+            <label for="dropdown" id="dropdown-label">Which option best describes your current role?</label><br>
+            <select id="dropdown">
+                <option value="0" disabled selected>Select current role</option>
+                <option value="1">Student</option>
+                <option value="2">Full time Jobd</option>
+                <option value="3">Full time Learner</option>
+                <option value="4">Prefer not to say</option>
+                <option value="5">Others</option>
+            </select><br>
+
+            <!-- Unica selección-->
+            <label for="radio" id="radio-title-label">Would you recommend JSalguero to a friend?</label><br>
+
+            <input type="radio" name="radio" id="definitely" value="Definitely">
+            <label for="definitely" id="definitely-label">Definitely</label><br>
+
+            <input type="radio" name="radio" id="maybe" value="Maybe">
+            <label for="maybe" id="maybe-label">Maybe</label><br>
+
+            <input type="radio" name="radio" id="notsure" value="Not Sure">
+            <label for="notsure" id="notsure-label">Not Sure</label><br>
+
+            <!-- Desplegable 2-->
+            <label for="dropdown1" id="dropdown1-label">What is your favorite feature of JSalguero?</label><br>
+            <select id="dropdown1">
+                <option value="0" disabled selected>Select an option</option>
+                <option value="1">Challenges</option>
+                <option value="2">Projects</option>
+                <option value="3">Community</option>
+                <option value="4">Open Source</option>
+            </select>
+
+            <!-- Checkboxes-->
+            <p id="improved">What would you like to see improved? (Check all that apply)</p>
+
+            <input type="checkbox" name="checkbox1" id="checkbox1" value="Front-end Projects">
+            <label for="checkbox1" id="checkbox1-label">Front-end Projects</label><br>
+
+            <input type="checkbox" name="checkbox2" id="checkbox2" value="Back-end Projects">
+            <label for="checkbox2" id="checkbox2-label">Back-end Projects</label><br>
+
+            <input type="checkbox" name="checkbox3" id="checkbox3" value="Data Visualization">
+            <label for="checkbox3" id="checkbox3-label">Data Visualization</label><br>
+
+            <input type="checkbox" name="checkbox4" id="checkbox4" value="Challenges">
+            <label for="checkbox4" id="checkbox4-label">Challenges</label><br>
+
+            <input type="checkbox" name="checkbox5" id="checkbox5" value="Open Source Community">
+            <label for="checkbox5" id="checkbox5-label">FOpen Source Community</label><br>
+
+            <input type="checkbox" name="checkbox6" id="checkbox6" value="Gitter help rooms">
+            <label for="checkbox6" id="checkbox6-label">Gitter help rooms</label><br>
+
+            <input type="checkbox" name="checkbox7" id="checkbox7" value="Videos">
+            <label for="checkbox7" id="checkbox7-label">Videos</label><br>
+
+            <input type="checkbox" name="checkbox8" id="checkbox8" value="City Meetups">
+            <label for="checkbox8" id="checkbox8-label">City Meetups</label><br>
+
+            <input type="checkbox" name="checkbox9" id="checkbox9" value="Wiki">
+            <label for="checkbox9" id="checkbox9-label">Wiki</label><br>
+
+            <input type="checkbox" name="checkbox10" id="checkbox10" value="Forum">
+            <label for="checkbox10" id="checkbox10-label">Forum</label><br>
+
+            <input type="checkbox" name="checkbox11" id="checkbox11" value="Additional Courses">
+            <label for="checkbox11" id="checkbox11-label">Additional Courses</label><br>
+
+            <!-- Textarea-->
+            <p id="comments">Any comments or suggestions?</p>
+            <textarea name="textarea" id="textarea" cols="80" rows="8"
+                placeholder="Insert your coment here..."></textarea><br>
+
+            <!-- Submit button-->
+            <button type="submit" id="submit"> Submit</button>
+        </form>
+    </main>
+
+    <footer>
+        
+    </footer>
+
+</body>
+
+</html>
